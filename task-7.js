@@ -5,13 +5,14 @@ const isLoginValid = function (login) {
 };
 
 const isLoginUnique = function (allLogins, login) {
-  let isUnique;
-  if (allLogins.includes(login)) {
-    isUnique = false;
-  } else {
-    isUnique = true;
-  }
-  return isUnique;
+  return !allLogins.includes(login);
+  // let isUnique;
+  // if (allLogins.includes(login)) {
+  //   isUnique = false;
+  // } else {
+  //   isUnique = true;
+  // }
+  // return isUnique;
 };
 
 const addLogin = function (allLogins, login) {
